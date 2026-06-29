@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* overflow: hidden;       /* this hides the scrollbar */
+    min-height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(../image/annie-spratt-PKq3htZdTto-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;       /* fixes the image in one spot while the text scroll up and down */
+}
+
+.container {
+    padding-left: 96px;
+    padding-right: 96px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(33, 33, 33, 1.0);
+    margin: 0;        /* affects the space in between the letters */
+    padding-top: 40px;
+    transform: translateY(-12px);
+    text-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7);
+}
+
+h3 {
+    font-size: 20px;
+    margin-left: 32px;
+}
+
+.job__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 40px;
+    transform: translateY(-12px);
+    text-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7);
+}
+
+.job__location {
+    font-size: 1.5rem;
+    padding-top: 40px;
+    padding-left: 16px;
+    transform: translateY(-12px);
+    text-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7);
+}
+.job {
+    display: flex;
+    flex-direction: row;
+}
+
+.job__bullet--points {
+    font-size: 20px;
+    color: #fbf9f6;
+}
+
+.job__bullet--point {
+    display: flex;
+    padding: 8px;
+    margin: 8px;
+}
+
+.fa-sith {
+    padding-right: 32px;
+}
+
+.row__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav__ul {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__li {
+    padding: 16px;
+    margin: 16px;
+}
+
+.nav__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav__link {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 8px;
+    letter-spacing: 1.5px;
+    position: relative;
+    color: white;
+    transform: translateY(-12px);
+    text-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7);
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.nav__links--row {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav__icon--color {
+    color: white;
+    transform: translateY(0px);
+    text-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7);
+}
+
+.nav__link--color {
+    color: rgb(33, 33, 33, 1);
+}
