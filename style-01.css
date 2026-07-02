@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {    
+    background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(./image/annie-spratt-PKq3htZdTto-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    /*max-width: 100%;
+    width: min(50%, 1200px);
+    margin: 0 auto;*/
+}
+
+header {
+    display: flex;
+    
+    position: relative;
+    justify-content: center;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1200px;
+    /*width: 100%;
+    width: max(50%, 1200px);
+    margin: 0 auto; */
+    min-height: 100hv;
+}
+
+.container figure {
+    max-width: 90%;
+    height: auto;
+}
+
+
+h1 { 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 6rem; 
+    color: rgb(33, 33, 33, 1.0);   
+    transform: translateY(-12px);
+    text-shadow: 0px 8px 12px rgba(14, 11, 11, 0.952);
+    z-index: 2;
+}
+
+h2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    z-index: 2;
+}
+
+p {
+    position: relative;
+    font-size: 2rem;
+    margin-top: 1px;
+    margin-bottom: 16px;
+    color: black;
+    transform: translateY(-12px);
+    text-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7)
+}
+
+.white {
+    color: white;
+}
+
+.space {
+    padding-left: 2rem;
+}
+
+.resume__contact {
+   
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.resume__phone {
+    
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.img {
+    padding-top: 29rem;
+}
+
+.banner__img {
+    position: absolute;
+    height: 400px;
+    /* the next 3 lines centers the 2nd image on top of the background image */
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* these next two lines create the fading around the banner__img */
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 95%);
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 95%);
+}
+
+#landing {
+    position: absolute;
+    bottom: 64px;
+    left: 83%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.nav__link {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 8px;
+    letter-spacing: 1.5px;
+    position: relative;
+    color: white;
+    transform: translateY(-12px);
+    text-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7)
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.nav__links--row {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav__linknav__link--img {
+    padding: 8p;
+}
+
+.nav__icon--color {
+    color: white;
+    transform: translateY(-1px);
+    text-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7);
+}
+
+.fa-pen-to-square {
+    color: rgb(33, 33, 33, 1);
+}
+
+.nav__link--color {
+    color: rgb(33, 33, 33, 1);
+    
+}
+
+@media (max-width: 768px) {
+    body {
+        background-position: top center;
+    }
+
+    .container figure {
+        width: 80%;
+    }
+}
