@@ -5,7 +5,7 @@
 }
 
 body {    
-    background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(./image/annie-spratt-PKq3htZdTto-unsplash.jpg);
+    background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(./image/birmingham-museums-trust-gzDlk3GOK2Y-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -34,7 +34,7 @@ header {
     /*width: 100%;
     width: max(50%, 1200px);
     margin: 0 auto; */
-    min-height: 100hv;
+    min-height: 10vh;
 }
 
 .container figure {
@@ -115,7 +115,7 @@ p {
 #landing {
     position: absolute;
     bottom: 64px;
-    left: 83%;
+    left: 75%;
     transform: translateX(-50%);
     width: 100%;
 }
@@ -141,7 +141,7 @@ p {
 }
 
 .nav__linknav__link--img {
-    padding: 8p;
+    padding: 8px;
 }
 
 .nav__icon--color {
@@ -159,12 +159,78 @@ p {
     
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     body {
-        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
     }
 
+    /*.container {
+        max-width: 1200px;
+        width: 100%;
+        width: max(50%, 1200px);
+        margin: 0 auto;
+    }
     .container figure {
         width: 80%;
+    } 
+} */
+
+/*@media (orientation:portrait) {
+    .container {
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+@media (orientation: landscape) {
+    .container {
+        background-position: center;
+    }
+} */
+
+@media (max-width: 1024px) {
+    .banner__img {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-postion: top center;
+    }
+
+    h1 {
+        text-align: center;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .banner__img {
+        width: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    body{
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-postion: top center;
+    }
+
+    h1 {
+        text-align: center;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .banner__img {
+        width: 20%;
     }
 }
