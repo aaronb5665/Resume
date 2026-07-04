@@ -2,12 +2,46 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style-summary.css">
+    <script src="../index.js"></script>
     <script src="https://kit.fontawesome.com/c29aec6c69.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUMMARY</title>
 </head>
 <body>
+    <section id="landings">
+        <nav>
+            <div class="row">
+                <div class="btn__menu menu__X" id="menu" onclick="openMenu()">
+                    <i class="fa-regular fa-file"></i>
+                </div>
+                    
+                <div class="menu__backdrop" id="menu">
+                    <button class="btn__menu btn__menu--close" id="close" onclick="closeMenu()">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">HOME</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="../summary/index-summary.html" class="menu__link" onclick="closeMenu()">SUMMARY</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="../experience/index-experience.html" class="menu__link" onclick="closeMenu()">EXPERIENCE</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="../Education/index-education.html" class="menu__link" onclick="closeMenu()">EDUCATION</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">WEB DESIGN</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
     <header>        
         <h1><i class="fa-solid fa-list-check"></i>
             Summary</h1>

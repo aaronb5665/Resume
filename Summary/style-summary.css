@@ -8,13 +8,191 @@ body {
     /* overflow: hidden;       /* this hides the scrollbar */
     min-height: 100vh;
     margin: 0;
-    background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(../image/annie-spratt-PKq3htZdTto-unsplash.jpg);
+    background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(../image/baliko-andras-Egi8dKQNky4-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: multiply;
     background-attachment: fixed;
 }
+
+/*
+
+TOP NAVIGATION BAR
+
+*/
+
+.btn__menu {
+    display: none;
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+}
+
+.menu--open .menu__X {
+    display: none;
+}
+
+.menu__backdrop {
+    position: fixed;
+    /* background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(./image/baliko-andras-Egi8dKQNky4-unsplash.jpg); */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center 100%;
+    top: 0;
+    left: 50%;    /* changed from 50% to 0 */
+    right: 7px; 
+    bottom: 0;
+    z-index: 100;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 30ms ease;
+    opacity: 1;
+    visibility: hidden;
+}
+
+.fa-file {
+    position:absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 3;
+    filter: drop-shadow(3px 5px 5px rgba(255, 140, 0, 0.25));
+    font-size: 2.5rem;
+}
+
+/* this class must come before the menu--open class in order for the backdrop to show*/
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+    /* display: block;*/
+}
+
+/* this class is for the .js */
+.menu--open {
+    max-width: 100vh;
+    overflow: hidden;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+.menu__list {
+    padding: 32px 0;
+}
+
+.menu__link {
+    font-size: 15px;
+    color: white;
+}
+
+/* this class is to move the icon 'X' to the upper right hand corner */
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: white;
+}
+/*
+
+TOP NAVIGATION BAR
+
+*/
+
+.btn__menu {
+    display: none;
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+}
+
+.menu--open .menu__X {
+    display: none;
+}
+
+.menu__backdrop {
+    position: absolute;
+    background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(./image/baliko-andras-Egi8dKQNky4-unsplash.jpg);
+    background-position: center 100%;
+    top: 0;
+    left: 50%;
+    right: 7px;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 30ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fa-file {
+    position:absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 3;
+    filter: drop-shadow(3px 5px 5px rgba(255, 140, 0, 0.25));
+    font-size: 2.5rem;
+}
+
+/* this class must come before the menu--open class in order for the backdrop to show*/
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+    /* display: block;*/
+}
+
+/* this class is for the .js */
+.menu--open {
+    max-width: 100vh;
+    overflow: hidden;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+.menu__list {
+    padding: 32px 0;
+}
+
+.menu__link {
+    font-size: 15px;
+    color: white;
+}
+
+/* this class is to move the icon 'X' to the upper right hand corner */
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: white;
+}
+
+.fa-file {
+    position:absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 3;
+    filter: drop-shadow(3px 5px 5px rgba(255, 140, 0, 0.25));
+    font-size: 2.5rem;
+}
+
+/*
+
+HEADER AND BODY CONTENT
+
+*/
 
 .container {
     padding-left: 96px;
@@ -30,7 +208,7 @@ h1 {
     font-size: 4rem;
     color: rgb(33, 33, 33, 1.0);
     transform: translateY(-12px);
-    text-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7);
+    filter: drop-shadow(3px 5px 5px rgba(255, 140, 0, 0.25));
 }
 
 p {
@@ -45,7 +223,7 @@ h3 {
     font-size: 2rem;
     color: rgb(33, 33, 33, 1);
     transform: translateY(-12px);
-    text-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7);
+    filter: drop-shadow(3px 5px 5px rgba(255, 140, 0, 0.25));
 }
 
 .row {
@@ -62,19 +240,29 @@ h3 {
     align-items: center;
 }
 
-.list {
-    display: flex;
-    flex-direction: row;
-    width: calc(100% / 3);
+ .list {
     font-size: 24px;
-    color: #fbf9f6;
-}
+    color: #fbf9f6; 
+} 
 
-ul {
+/* ul {
+    
     list-style: none;
     list-style-type: none;
     padding: 0;
     margin: 0;
+} */
+
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    margin: 0 auto;
+    list-style: none;
+    gap: 20px 30px;
 }
 
 li {
@@ -118,7 +306,7 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+} 
 
 .nav__link {
     font-size: 24px;
@@ -133,6 +321,7 @@ li {
 
 .nav__link:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .nav__links--row {
@@ -150,4 +339,47 @@ li {
     color: rgb(33, 33, 33, 1);
 }
 
-@media()
+@media (max-width: 1024px) {
+    .banner__img {
+        width: 50%;
+        height: 250px;
+    }
+
+    .fa-file {
+        float: right;
+    }
+
+    .nav__links {
+        display: none;
+    }
+
+    .btn__menu {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        background-size:  100% auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    h1 {
+        text-align: center;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

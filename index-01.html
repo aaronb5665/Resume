@@ -2,12 +2,46 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style-01.css">
+    <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/c29aec6c69.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <section id="landings">
+        <nav>
+            <div class="row">
+                <div class="btn__menu menu__X" id="menu" onclick="openMenu()">
+                    <i class="fa-regular fa-file"></i>
+                </div>
+                    
+                <div class="menu__backdrop" id="menu">
+                    <button class="btn__menu btn__menu--close" id="close" onclick="closeMenu()">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">HOME</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="../summary/index-summary.html" class="menu__link" onclick="closeMenu()">SUMMARY</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="../experience/index-experience.html" class="menu__link" onclick="closeMenu()">EXPERIENCE</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="../Education/index-education.html" class="menu__link" onclick="closeMenu()">EDUCATION</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">WEB DESIGN</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
     <header>
         <section id="resume">
             <div class="container">
@@ -15,40 +49,39 @@
                     <div class="resume__title">
                         <h1 class="resume__name">Aaron Brown's</h1>
                         <h2 class="resume__title">Resume</h2>
-                        <p class="resume__contact">email:  <span class="white space"> aaronb.resume@gmail.com</span></p>
-                        <p class="resume__phone">contact #: <span class="white space"> (817) 703-3648</span></p>
+                        <div class="resume__title--contact">
+                            <p class="resume__contact">Email: aaronb.resume@gmail.com</p>
+                            <p class="resume__phone">contact #: (817) 703-3648</p>
+                        </div>
                     </div>                
                 </div> 
                 <figure class="img">
                     <img src="./network/alina-grubnyak-ZiQkhI7417A-unsplash.jpg" alt="networking" class="banner__img">
                 </figure>           
-            <div >
-            
+            <div >            
         </section>
     </header>
-    <main>
-        
-    </main>
+    <main>    
         <section id="landing">
-        <nav>
-            <div class="row">
-                <div class="navigation">
-                    <ul class="nav__links">
-                        <div class="nav__links--row">                            
-                            <li><i class="fa-solid fa-list-check nav__icon--color"></i>
-                                <a href="../summary/index-summary.html" class="nav__link">Summary</a></li>                        
-                            <li><i class="fa-solid fa-desktop nav__icon--color"></i>
-                            <a href="../experience/index-experience.html" class="nav__link">Experience</a></li>
-                            <li><i class="fa-solid fa-building-columns nav__icon--color"></i>
-                            <a href="./Education/index-education.html" class="nav__link">Education</a></li>
-                            <li><i class="fa-solid fa-pen-to-square "></i>
-                            <a href="#Web Design" class="nav__link nav__link--color">Web Design</a></li>
-                        </div>
-                    </ul>
+            <nav>
+                <div class="row">
+                    <div class="navigation">
+                        <ul class="nav__links">
+                            <div class="nav__links--row">                            
+                                 <li><i class="fa-solid fa-list-check nav__icon--color"></i>
+                                    <a href="../summary/index-summary.html" class="nav__link">Summary</a></li>                       
+                                <li><i class="fa-solid fa-desktop nav__icon--color"></i>
+                                    <a href="../experience/index-experience.html" class="nav__link">Experience</a></li>
+                                <li><i class="fa-solid fa-building-columns nav__icon--color"></i>
+                                    <a href="./Education/index-education.html" class="nav__link">Education</a></li>
+                                <li><i class="fa-solid fa-pen-to-square nav__icon--color"></i>
+                                    <a href="#Web Design" class="nav__link nav__link--color">Web Design</a></li>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </section>
-    
+            </nav>
+        </section>
+    </main>
 </body>
 </html>
