@@ -2,12 +2,46 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style-education.css">
+    <script src="../index.js"></script>
     <script src="https://kit.fontawesome.com/c29aec6c69.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDUCATION</title>
 </head>
 <body>
+    <section id="landings">
+        <nav>
+            <div class="row">
+                <div class="btn__menu menu__X" id="menu" onclick="openMenu()">
+                    <i class="fa-regular fa-file"></i>
+                </div>
+                    
+                <div class="menu__backdrop" id="menu">
+                    <button class="btn__menu btn__menu--close" id="close" onclick="closeMenu()">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a href="../index-01.html" class="menu__link" onclick="closeMenu()">HOME</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="../summary/index-summary.html" class="menu__link" onclick="closeMenu()">SUMMARY</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="../experience/index-experience.html" class="menu__link" onclick="closeMenu()">EXPERIENCE</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="../Education/index-education.html" class="menu__link" onclick="closeMenu()">EDUCATION</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">WEB DESIGN</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
     <header>        
         <h1><i class="fa-solid fa-building-columns"></i>
             Education</h1>
@@ -27,7 +61,7 @@
                         </div>
                         <div class="degree__info">
                             <div class="degree__college">Strayer University</div>
-                            <div class="degree__location">, Willingboro NJ</div>                        
+                            <div class="degree__location">Willingboro NJ</div>                        
                             <p class="degree__year space">(2022)</p>
                             <p class="degree__gpa">GPA: 3.83</p>
                         </div>
@@ -43,7 +77,7 @@
                         </div>
                         <div class="degree__info">
                             <div class="degree__college">Community College of Philadelphia</div>
-                            <div class="degree__location">, Philadelphia PA</div>
+                            <div class="degree__location">Philadelphia PA</div>
                             <p class="degree__year">(2002)</p>
                             <p class="degree__gpa">GPA: 3.26</p>
                         </div>
@@ -59,7 +93,7 @@
                         </div>
                         <div class="degree__info">
                             <div class="degree__college">Community College of Philadelphia</div>
-                            <div class="degree__location">, Philadelphia PA</div>
+                            <div class="degree__location">Philadelphia PA</div>
                             <p class="degree__year">(2001)</p>
                             <p class="degree__gpa">GPA: 3.28</p>
                         </div>
@@ -76,12 +110,11 @@
                     <ul class="nav__links nav__ul">
                         <div class="nav__links--row"> 
                             <li class="nav__li"><i class="fa-solid fa-list-check nav__icon--color"></i>
-                                <a href="../index.html" class="nav__link">Home</a></li>                           
+                                <a href="../index-01.html" class="nav__link">Home</a></li>                           
                             <li class="nav__li"><i class="fa-solid fa-list-check nav__icon--color"></i>
                                 <a href="../summary/index-summary.html" class="nav__link">Summary</a></li>                        
                             <li class="nav__li"><i class="fa-solid fa-desktop nav__icon--color"></i>
                             <a href="../Experience/index-experience.html" class="nav__link">Experience</a></li>
-                            
                             <li class="nav__li"><i class="fa-solid fa-pen-to-square"></i>
                             <a href="#Web Design" class="nav__link nav__link--color">Web Design</a></li>
                         </div>

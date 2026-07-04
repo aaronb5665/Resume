@@ -92,7 +92,8 @@ TOP NAVIGATION BAR
 
 .menu__backdrop {
     position: absolute;
-    background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(./image/baliko-andras-Egi8dKQNky4-unsplash.jpg);
+    /* background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(./image/baliko-andras-Egi8dKQNky4-unsplash.jpg); */
+    background-color: rgba(0, 0, 0, 0.75);
     background-position: center 100%;
     top: 0;
     left: 50%;

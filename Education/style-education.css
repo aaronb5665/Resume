@@ -8,11 +8,104 @@ body {
     /* overflow: hidden;       /* this hides the scrollbar */
     min-height: 100vh;
     margin: 0;
-    background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(../image/annie-spratt-PKq3htZdTto-unsplash.jpg);
+    background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(../image/baliko-andras-Egi8dKQNky4-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
+/*
+
+TOP NAVIGATION BAR
+
+*/
+
+.btn__menu {
+    display: none;
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+}
+
+.menu--open .menu__X {
+    display: none;
+}
+
+.menu__backdrop {
+    position: absolute;
+    /* background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(./image/baliko-andras-Egi8dKQNky4-unsplash.jpg); */
+    background-color: rgba(0, 0, 0, 0.75);
+    background-position: center 100%;
+    top: 0;
+    left: 50%;    /* changed from 50% to 0 */
+    right: 7px; 
+    bottom: 0;
+    z-index: 100;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 30ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fa-file {
+    position:absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 3;
+    filter: drop-shadow(3px 5px 5px rgba(255, 140, 0, 0.25));
+    font-size: 2.5rem;
+}
+
+/* this class must come before the menu--open class in order for the backdrop to show*/
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+    /* display: block;*/
+}
+
+/* this class is for the .js */
+.menu--open {
+    max-width: 100vh;
+    overflow: hidden;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+.menu__list {
+    padding: 32px 0;
+    list-style: none;
+}
+
+.menu__link {
+    font-size: 15px;
+    color: white;
+}
+
+/* this class is to move the icon 'X' to the upper right hand corner */
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    filter: drop-shadow(3px 5px 5px rgba(255, 165, 0, 1));
+    color: rgb(205, 195, 195);
+}
+
+#education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10rem;
 }
 
 .container {
@@ -49,6 +142,7 @@ p {
 
 .degree {
     display: flex;
+
 }
 
 .degree__title {
@@ -61,6 +155,9 @@ p {
 }
 
 .degree__info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     padding-right: 64px;
     display: flex;
     /* justify-content: space-between; */
@@ -76,7 +173,7 @@ p {
 
 .degree__location {
     font-size: 1.5rem;
-    padding-left: 0;
+    padding-left: 2rem;
 }
 
 .degree__year {
@@ -94,11 +191,24 @@ p {
     padding-left: 13rem;
 }
 
-row__nav {
+/*
+
+Bottom Navigation Section
+
+*/
+
+#landing {
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    position: absolute;
+    bottom: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.row {
+    padding-top: 8rem;
 }
 
 .nav__ul {
@@ -146,5 +256,126 @@ row__nav {
 }
 
 .nav__link--color {
-    color: r
+    color: rgb(33, 33, 33, 1);
+}
 
+@media (max-width: 1024px) {
+    .fa-file {
+        float: right;
+    }
+
+    .nav__links {
+        display: none;
+    }
+
+    .btn__menu {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        background-size:  100% auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-attachment: fixed;
+    }
+
+    .fa-file {
+        float: right;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        padding-top: 0;
+        padding-right: 10rem;
+    }
+
+    h1 {
+        text-align: center;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 1rem;
+    }
+
+    .degree {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .degree__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .space {
+        padding-left: 1rem;
+    }
+
+    .degree__gpa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-postion: top center;
+    }
+
+    .row {
+        padding-left: 10rem;
+    }
+
+    .fa-file {
+        float: right;
+    }
+
+    h1 {
+        text-align: center;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .degree {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .degree__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .space {
+        padding-left: 1rem;
+    }
+
+    .degree__gpa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-right: 1rem;
+    }
+}

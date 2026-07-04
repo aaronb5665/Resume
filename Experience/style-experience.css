@@ -8,7 +8,7 @@ body {
     /* overflow: hidden;       /* this hides the scrollbar */
     min-height: 100vh;
     margin: 0;
-    background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(../image/annie-spratt-PKq3htZdTto-unsplash.jpg);
+    background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(../image/baliko-andras-Egi8dKQNky4-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
@@ -34,6 +34,12 @@ h3 {
     font-size: 20px;
     margin-left: 32px;
 }
+
+/*
+
+Job Experience Section
+
+*/
 
 .job__title {
     font-size: 1.5rem;
@@ -69,6 +75,12 @@ h3 {
 .fa-sith {
     padding-right: 32px;
 }
+
+/*
+
+Bottom Navigation Section
+
+*/
 
 .row__nav {
     display: flex;
