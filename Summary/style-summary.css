@@ -35,9 +35,9 @@ TOP NAVIGATION BAR
 }
 
 .menu__backdrop {
-    position: fixed;
-    /* background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(./image/baliko-andras-Egi8dKQNky4-unsplash.jpg); */
-    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(./image/baliko-andras-Egi8dKQNky4-unsplash.jpg);
+    /* background-color: rgba(0, 0, 0, 0.5); */
     background-position: center 100%;
     top: 0;
     left: 50%;    /* changed from 50% to 0 */
@@ -49,89 +49,9 @@ TOP NAVIGATION BAR
     justify-content: center;
     align-items: center;
     transition: all 30ms ease;
-    opacity: 1;
-    visibility: hidden;
-}
-
-.fa-file {
-    position:absolute;
-    top: 20px;
-    right: 10px;
-    z-index: 3;
-    filter: drop-shadow(3px 5px 5px rgba(255, 140, 0, 0.25));
-    font-size: 2.5rem;
-}
-
-/* this class must come before the menu--open class in order for the backdrop to show*/
-.menu--open .menu__backdrop {
-    visibility: visible;
-    opacity: 1;
-    /* display: block;*/
-}
-
-/* this class is for the .js */
-.menu--open {
-    max-width: 100vh;
-    overflow: hidden;
-}
-
-.menu__links {
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-}
-
-.menu__list {
-    padding: 32px 0;
-}
-
-.menu__link {
-    font-size: 15px;
-    color: white;
-}
-
-/* this class is to move the icon 'X' to the upper right hand corner */
-.btn__menu--close {
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    padding: 8px;
-    color: white;
-}
-/*
-
-TOP NAVIGATION BAR
-
-*/
-
-.btn__menu {
-    display: none;
-    background-color: transparent;
-    font-size: 40px;
-    text-align: center;
-    border: none;
-}
-
-.menu--open .menu__X {
-    display: none;
-}
-
-.menu__backdrop {
-    position: absolute;
-    background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(./image/baliko-andras-Egi8dKQNky4-unsplash.jpg);
-    background-position: center 100%;
-    top: 0;
-    left: 50%;
-    right: 7px;
-    bottom: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 30ms ease;
     opacity: 0;
     visibility: hidden;
-}
+} 
 
 .fa-file {
     position:absolute;
@@ -163,6 +83,7 @@ TOP NAVIGATION BAR
 
 .menu__list {
     padding: 32px 0;
+    list-style: none;
 }
 
 .menu__link {
@@ -177,15 +98,6 @@ TOP NAVIGATION BAR
     top: 10px;
     padding: 8px;
     color: white;
-}
-
-.fa-file {
-    position:absolute;
-    top: 20px;
-    right: 10px;
-    z-index: 3;
-    filter: drop-shadow(3px 5px 5px rgba(255, 140, 0, 0.25));
-    font-size: 2.5rem;
 }
 
 /*
