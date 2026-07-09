@@ -164,6 +164,13 @@ Bottom Navigation Section
 }
 
 @media (max-width: 768px) {
+		body{
+        background-size:  100% auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
     .job {
         display: flex;
         flex-direction: column;
