@@ -310,10 +310,10 @@ a.nav__link:hover {
         margin-left: auto;
     }
     
-    .banner__img {
+    /* .banner__img {
         width: 50%;
         height: 150px;
-    }
+    } */
 }
 
 @media (max-width: 480px) {
