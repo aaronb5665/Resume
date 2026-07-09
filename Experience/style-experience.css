@@ -170,6 +170,10 @@ Bottom Navigation Section
         align-items: center;
     }
 
+		h1 {
+				font-size: 2.5rem;
+			}
+
     h3 {
         display: flex;
         justify-content: 0center;
@@ -185,8 +189,6 @@ Bottom Navigation Section
 }
 
 @media (max-with: 480px) {
-		h1 {
-				font-size: 2.5rem;
-			}
+		
 
 }
