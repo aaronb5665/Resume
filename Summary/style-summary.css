@@ -282,4 +282,9 @@ li {
         margin-right: auto;
         margin-left: auto;
     }
+	
+	@media (max-width: 480px) {
+			h1 {
+					font-size: 2rem;
+			}
 }
