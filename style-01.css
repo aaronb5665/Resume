@@ -340,6 +340,7 @@ a.nav__link:hover {
         height: 270px;
         width: 80%;
 				top: 30rem
+				left: 1rem;
     }
 h2 {
 		font-size: 2rem;
