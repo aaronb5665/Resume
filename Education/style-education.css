@@ -207,9 +207,9 @@ Bottom Navigation Section
     width: 100%;
 }
 
-/* .row {
+.row {
     padding-top: 8rem;
-} */
+}
 
 .nav__ul {
     list-style: none;
