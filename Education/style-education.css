@@ -275,6 +275,8 @@ Bottom Navigation Section
 
 @media (max-width: 768px) {
     body{
+				 min-height: 100vh;
+    		 margin: 0;
         background-size:  100% auto;
         background-size: cover;
         background-repeat: no-repeat;
