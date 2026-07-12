@@ -339,7 +339,7 @@ Bottom Navigation Section
     body {
         background-size: cover;
         background-repeat: no-repeat;
-       /* background-position: 100% top !important;  /* changed from top center to 80% top  */
+        background-position: 100% top !important;  /* changed from top center to 80% top  */
 		background-attachment: fixed;
     }
 
