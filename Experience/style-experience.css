@@ -156,7 +156,7 @@ Bottom Navigation Section
 }
 
 @media (max-width: 768px) {
-		body{
+	body{
         background-size:  100% auto;
         background-size: cover;
         background-repeat: no-repeat;
@@ -175,7 +175,7 @@ Bottom Navigation Section
 
     h3 {
         display: flex;
-        justify-content: 0center;
+        justify-content: center;
         text-align: left;
         padding-right: rem;
         margin-left: 0;
@@ -184,12 +184,4 @@ Bottom Navigation Section
     .space__between {
         margin: 1rem;
     }
-
-}
-
-@media (max-with: 480px) {
-	background-attachment: fixed;
-}
-		
-
 }
