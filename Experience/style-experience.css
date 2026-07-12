@@ -185,3 +185,12 @@ Bottom Navigation Section
         margin: 1rem;
     }
 }
+
+@media (max-width: 480px) {
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;  /* changed from top center to 80% top  */
+		background-attachment: fixed;
+    }
+}
