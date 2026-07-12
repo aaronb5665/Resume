@@ -5,7 +5,7 @@
 }
 
 body {
-    overflow: hidden;       /* this hides the scrollbar */
+    /*overflow: hidden;       /* this hides the scrollbar */
     min-height: 100vh;
     margin: 0;
     background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(../image/baliko-andras-Egi8dKQNky4-unsplash.jpg);
