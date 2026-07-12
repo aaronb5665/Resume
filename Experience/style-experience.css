@@ -20,7 +20,6 @@ body {
     padding-right: 96px;
 }
 
-
 .row {
     text-align: left;
     padding-left: 16rem;
@@ -170,9 +169,9 @@ Bottom Navigation Section
         align-items: center;
     }
 
-		h1 {
-				font-size: 2.5rem;
-			}
+	h1 {
+		font-size: 2.5rem;
+	}
 
     h3 {
         display: flex;
@@ -189,6 +188,8 @@ Bottom Navigation Section
 }
 
 @media (max-with: 480px) {
+	background-attachment: fixed;
+}
 		
 
 }
