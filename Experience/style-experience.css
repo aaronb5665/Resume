@@ -145,13 +145,13 @@ Bottom Navigation Section
 }
 
 @media (max-width: 1024px) {
-	body{
+	/* body{
         background-size:  100% auto;
         background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(../image/baliko-andras-Resized.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top center;
-    }
+    } */
 	
     .jobs {
         display: flex;
@@ -196,22 +196,12 @@ Bottom Navigation Section
     }
 }
 
-<<<<<<< HEAD
-@media (max-width: 480px) {
-    body{
-        background-size:  100% auto;
-=======
 /* @media (max-width: 480px) {
     body{
         background-size:  100% auto;
         background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(../image/baliko-andras-Resized.jpg);
->>>>>>> f96f89f73db0ad772789a412e95ca111dbbfec2b
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top center;
     }
-<<<<<<< HEAD
-}
-=======
-} */
->>>>>>> f96f89f73db0ad772789a412e95ca111dbbfec2b
+} */  
