@@ -5,7 +5,6 @@
 }
 
 body {
-    /* overflow: hidden;       /* this hides the scrollbar */
     min-height: 100vh;
     margin: 0;
     background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(../image/baliko-andras-Egi8dKQNky4-unsplash.jpg);
@@ -278,11 +277,8 @@ Bottom Navigation Section
         background-size:  100% auto;
         background-size: cover;
         background-repeat: no-repeat;
-        /* background-position: top center; */
-        background-attachment: fixed;
+        background-position: top center;
     }
-
-
 
     .fa-file {
         float: right;
@@ -304,6 +300,7 @@ Bottom Navigation Section
         margin-right: auto;
         margin-left: auto;
         margin-top: 1rem;
+		font-size: 2.5rem;
     }
 
     .degree {
@@ -332,14 +329,14 @@ Bottom Navigation Section
         padding-right: 1rem;
     }
 
-    
 }
 
 @media (max-width: 480px) {
     body{
+        background-size:  100% auto;
         background-size: cover;
         background-repeat: no-repeat;
-       /* background-position: 100% top !important;  /* changed from top center to 80% top  */
+        background-position: top center;
     }
 
     .row {
