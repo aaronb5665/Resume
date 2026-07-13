@@ -10,6 +10,7 @@ body {
     margin: 0;
     background-image: linear-gradient(rgba(184, 61, 0, 0.1), rgba(184, 64, 0, 0.1)), url(../image/baliko-andras-Egi8dKQNky4-unsplash.jpg);
     background-size: cover;
+		background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: multiply;
     background-attachment: fixed;       /* fixes the image in one spot while the text scroll up and down */
