@@ -187,10 +187,10 @@ Bottom Navigation Section
 }
 
 @media (max-width: 480px) {
-    body {
+    body{
+        background-size:  100% auto;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;  /* changed from top center to 80% top  */
-		background-attachment: fixed;
+        background-position: top center;
     }
 }
